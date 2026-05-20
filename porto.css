@@ -1,0 +1,397 @@
+/* appling google font over the website  */
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+}
+
+/* styling menu icon */
+.nav-menu{
+    border: none;
+    background-color: #fff;
+    font-size: 1.5rem;
+    color: #5d7dc2;
+}
+
+/* styling navbar links  */
+.navbar-nav a{
+    color: black;
+    position: relative;
+}
+
+.navbar-nav a:hover{
+    color: #5d7dc2;
+}
+
+.navbar-nav a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    top: 35px;
+    position: absolute;
+    background: #5d7dc2;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.navbar-nav a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+/* styling contact btn  */
+.c-btn{
+    border: none;
+    background: #5d7dc2;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* styling home section starts */
+.home{
+    background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 100%);
+    padding: 30px 0px 10px 0px;
+}
+
+.home h2{
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+.c-orange{
+    color: #7da3f7;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.home p{
+    width: fit-content;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.h-btn:hover{
+    background: #7da3f7;
+    color: #fff;
+    transform: translateY(-20px);
+    transition-duration: 1s;
+}
+
+.link{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #5d7dc2;
+    position: relative;
+}
+
+.link::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    top: 20px;
+    background-color: #7da3f7;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.link:hover{
+    color: #5d7dc2;
+}
+
+.link:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* adding animation to home section image  */
+.home img{
+    animation: floatimg 4s ease-in-out infinite;
+}
+
+@keyframes floatimg {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-24px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+/* expertise section starts */
+.heading small{
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.heading h3{
+    margin-top: 0.5rem;
+    color: #305997;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.expertise h4{
+    color: #305997;
+    font-weight: 700;
+}
+
+.expertise a{
+    text-decoration: none;
+    color: #305997;
+}
+
+.expertise a:hover{
+    color: #305997;
+}
+
+.expertise .service-card{
+    text-align: center;
+    padding: 15px 15px;
+    border-radius: 0.7rem;
+}
+
+/* ================= PORTFOLIO ================= */
+
+.portfolio .row{
+    row-gap: 30px;
+}
+
+/* card */
+.post .card{
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    background: #fff;
+}
+
+.post .card:hover{
+    transform: translateY(-8px);
+}
+
+/* IMAGE RESPONSIVE */
+.card-img-top{
+    width: 100%;
+    max-width: 280px; /* ukuran desktop */
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+/* card body */
+.post .card-body{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+}
+
+/* title */
+.card-title{
+    color: #305997;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* badge */
+.badge{
+    margin-top: 5px;
+    font-size: 0.8rem;
+}
+
+/* button */
+.read-more-btn,
+.link{
+    margin-top: 15px;
+    display: inline-block;
+}
+
+/* contact section starts */
+.contact{
+    background-color: #f3f3f3;
+}
+
+.contact-details i{
+    font-size: 1.5rem;
+    color: #5d7dc2;
+}
+
+.contact-details p{
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+/* footer section starts */
+footer{
+    background-color: #211e39;
+}
+
+footer .link-group a{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #6c757d;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+footer .link-group a:hover{
+    color: #5d7dc2;
+}
+
+.social-links button{
+    border: none;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    background-color: #fff;
+    padding: 14px 15px 10px 15px;
+}
+
+.social-links .dribble{
+    color: #f33a7e;
+}
+
+.social-links button:hover{
+    color: #fff;
+    transform: translateY(-20px);
+    transition-duration: 1s;
+}
+
+.social-links .dribble:hover{
+    background-color: #f33a7e;
+}
+
+.social-links .whatsapp{
+    color: #25D366;
+}
+
+.social-links .whatsapp:hover{
+    background-color: #25D366;
+}
+
+.social-links .behance{
+    color: #255afc;
+}
+
+.social-links .behance:hover{
+    background-color: #255afc;
+}
+
+/* styling back to top button */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    display: none;
+
+    background-color: #5d7dc2;
+    color: white;
+
+    font-size: 1.2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+
+    transition: 0.3s ease;
+    z-index: 999;
+}
+
+#btn-back-to-top:hover{
+    transform: translateY(-5px);
+    background-color: #4d6eb5;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 991px){
+
+    .post{
+        margin-bottom: 20px;
+    }
+
+    .card-img-top{
+        max-width: 240px;
+    }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px){
+
+    .portfolio .row{
+        gap: 25px;
+    }
+
+    .post{
+        width: 100%;
+    }
+
+    .post .card{
+        width: 100%;
+    }
+
+    .card-img-top{
+        max-width: 200px; /* lebih kecil di hp */
+    }
+
+    .card-title{
+        font-size: 1.2rem;
+    }
+
+    .badge{
+        font-size: 0.7rem;
+    }
+
+    .link,
+    .read-more-btn{
+        font-size: 1rem;
+    }
+
+    .post .card-body{
+        padding: 15px;
+    }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px){
+
+    .heading h3{
+        font-size: 1.8rem;
+    }
+
+    .card-img-top{
+        max-width: 170px; /* hp kecil */
+    }
+
+    .card-body{
+        padding: 15px;
+    }
+}
